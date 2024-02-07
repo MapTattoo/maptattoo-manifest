@@ -12,9 +12,8 @@
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/nxp-imx-support" name="imx-support"/>
-  <remote fetch="https://github.com/vlintilhac2/meta-maptattoo.git" name="maptattoo"/>
-  <remote fetch="https://github.com/sbabic/meta-swupdate" name="swupdate"/>
-  <remote fetch="https://github.com/nxp-imx-support/meta-swupdate-imx" name="swupdate-imx"/>
+  <remote fetch="https://github.com/vlintilhac2" name="maptattoo"/>
+  <remote fetch="https://github.com/sbabic" name="swupdate"/>
 
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
     <linkfile dest="README" src="README"/>
@@ -41,5 +40,5 @@
     <linkfile dest="imx-setup-release.sh" src="imx-setup-release.sh"/>
   </project>
   <project name="meta-swupdate" path="sources/meta-swupdate" remote="swupdate" revision="kirkstone"/>
-  <project name="meta-swupdate" path="sources/meta-swupdate-imx" remote="swupdate-imx" revision="kirkstone_5.15.71_2.2.0"/>
+  <project name="meta-swupdate-imx" path="sources/meta-swupdate-imx" remote="maptattoo" revision="5.15.71_2.2.0"/>
 </manifest>
